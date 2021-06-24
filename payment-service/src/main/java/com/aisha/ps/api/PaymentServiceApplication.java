@@ -1,4 +1,4 @@
-package com.aisha.paymentservice;
+package com.aisha.ps.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
