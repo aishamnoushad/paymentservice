@@ -24,4 +24,33 @@ public class Payment {
 		this.transactionId = transactionId;
 		
 	}
+	@Override
+	public String toString() {
+		return "Payment [PaymentId=" + PaymentId + ", paymentStatus=" + paymentStatus + ", transactionId="
+				+ transactionId + "]";
+	}
+	public int getPaymentId() {
+		return PaymentId;
+	}
+	public void setPaymentId(int paymentId) {
+		PaymentId = paymentId;
+	}
+	public String getPaymentStatus() {
+		return paymentStatus;
+	}
+	public void setPaymentStatus(String paymentStatus) {
+		this.paymentStatus = paymentStatus;
+	}
+	public String getTransactionId() {
+		return transactionId;
+	}
+	public Payment(int paymentId, String paymentStatus, String transactionId) {
+		super();
+		PaymentId = paymentId;
+		this.paymentStatus = paymentStatus;
+		this.transactionId = transactionId;
+	}
+	public Payment() {
+		
+	}
 }
