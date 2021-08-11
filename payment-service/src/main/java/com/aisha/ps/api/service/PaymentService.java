@@ -23,4 +23,9 @@ public class PaymentService {
 	public String paymentProcessing() {
 		return new Random().nextBoolean()? "Success" : "Failed";
 	}
+
+	public Payment findALLPaymentHistoryRelated(int orderid) {
+		// TODO Auto-generated method stub
+		return repository.findByOrderid(orderid);
+	}
 }
